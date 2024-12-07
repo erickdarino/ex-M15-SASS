@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  background-color: #b71540;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .container .branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+header .container .branding img {
+  width: 30px;
+}
+header .container .menu, header .container a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 18px;
+}
+
+section {
+  padding: 56px 0;
+}
+section h2 {
+  font-weight: bolder;
+  border-radius: 50px 0px 0px 50px;
+  padding: 12px;
+  background-image: linear-gradient(to right, #b71540 30%, #e55039, #f8c291, transparent);
+  display: flex;
+  width: 200px;
+  justify-items: center;
+}
+section h2 img {
+  width: 30px;
+}
+section h4 {
+  font-weight: bolder;
+  border-radius: 12px 12px;
+  padding: 12px;
+  background-image: linear-gradient(to right, #b71540 30%, #e55039, #f8c291, transparent);
+}
+section .products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+section .product-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+section .product-button {
+  display: block;
+  background-color: #e55039;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+section .product-button:hover {
+  background-color: rgb(185.1830357143, 45.828125, 24.3169642857);
+}
+
+body {
+  background-image: linear-gradient(-4deg, #f8af6b, #f8ddae);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+  section .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section .products {
+    display: block;
+  }
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
